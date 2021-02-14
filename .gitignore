@@ -4,6 +4,7 @@ obj/
 bin/
 
 /docs/**
+/dist/**
 
 # Logs
 logs
