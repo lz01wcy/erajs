@@ -3,7 +3,7 @@
 obj/
 bin/
 
-
+/docs/**
 
 # Logs
 logs

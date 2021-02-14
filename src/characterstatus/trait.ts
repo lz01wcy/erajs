@@ -1,35 +1,33 @@
 import { savedata, saveclass, serializer } from '../savedata'
 import { CharacterDef } from '../charadef'
 import { CharactersContainer } from '../character'
-import { AsyncEvent } from '../util/event';
-console.log("trait")
+import { AsyncEvent } from '../util/event'
+console.log('trait')
 
 export const initializeModule = new AsyncEvent()
 
 initializeModule.addListener(async () => {
-    CharacterDef.prepareFunctions.push(c => {
-        c.特性 = new TraitTable()
-    })
-    CharactersContainer.prepareFunctions.push((c, d) => {
-        if (d) {
-            c.特性 = serializer.clone(d.特性)
-        }
-        else {
-            c.特性 = new TraitTable()
-        }
-    })
+  CharacterDef.prepareFunctions.push(c => {
+    c.特性 = new TraitTable()
+  })
+  CharactersContainer.prepareFunctions.push((c, d) => {
+    if (d) {
+      c.特性 = serializer.clone(d.特性)
+    } else {
+      c.特性 = new TraitTable()
+    }
+  })
 })
-
 
 /**
  * 特性(旧素質もしくはTALENT)
- * 
+ *
  * Emueraで用途が逸れていったTALENTと違いbooleanしか持たない。
  * 旧TALENTでenum的な使い方がされてしまったのは、プロパティ関数的な存在がなかった、もしくは非常に手が届きにくかったから。
  * 作ったとしても必ずグローバル関数にせざるを得ない事情もあった。
  * ここではそういうことはない。そういう使い方を望むなら独自関数をexport定義するなりするべし
  */
-@saveclass("traittable")
+@saveclass('traittable')
 export class TraitTable {
     @savedata 処女 = false
     @savedata 童貞 = false
@@ -64,7 +62,6 @@ export class TraitTable {
     @savedata 絶壁 = false
     @savedata 巨根 = false
     @savedata 短小 = false
-
 
     //
     @savedata 恋慕 = false
@@ -132,8 +129,4 @@ export class TraitTable {
 
     @savedata 汚れ無視 = false
     @savedata 潔癖症 = false
-    
 }
-
-
-
