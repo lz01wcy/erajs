@@ -995,7 +995,7 @@
 
 "@typescript-eslint/eslint-plugin@^4.15.0":
   version "4.15.0"
-  resolved "https://registry.npm.taobao.org/@typescript-eslint/eslint-plugin/download/@typescript-eslint/eslint-plugin-4.15.0.tgz?cache=0&sync_timestamp=1613251626190&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Feslint-plugin%2Fdownload%2F%40typescript-eslint%2Feslint-plugin-4.15.0.tgz#13a5a07cf30d0d5781e43480aa2a8d38d308b084"
+  resolved "https://registry.npm.taobao.org/@typescript-eslint/eslint-plugin/download/@typescript-eslint/eslint-plugin-4.15.0.tgz#13a5a07cf30d0d5781e43480aa2a8d38d308b084"
   integrity sha1-E6WgfPMNDVeB5DSAqiqNONMIsIQ=
   dependencies:
     "@typescript-eslint/experimental-utils" "4.15.0"
@@ -1021,7 +1021,7 @@
 
 "@typescript-eslint/parser@^4.15.0":
   version "4.15.0"
-  resolved "https://registry.npm.taobao.org/@typescript-eslint/parser/download/@typescript-eslint/parser-4.15.0.tgz?cache=0&sync_timestamp=1613251625416&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40typescript-eslint%2Fparser%2Fdownload%2F%40typescript-eslint%2Fparser-4.15.0.tgz#8df94365b4b7161f9e8514fe28aef19954810b6b"
+  resolved "https://registry.npm.taobao.org/@typescript-eslint/parser/download/@typescript-eslint/parser-4.15.0.tgz#8df94365b4b7161f9e8514fe28aef19954810b6b"
   integrity sha1-jflDZbS3Fh+ehRT+KK7xmVSBC2s=
   dependencies:
     "@typescript-eslint/scope-manager" "4.15.0"
@@ -2580,7 +2580,7 @@ escodegen@~1.9.0:
 
 eslint-config-standard@^16.0.2:
   version "16.0.2"
-  resolved "https://registry.npm.taobao.org/eslint-config-standard/download/eslint-config-standard-16.0.2.tgz?cache=0&sync_timestamp=1605662634915&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-config-standard%2Fdownload%2Feslint-config-standard-16.0.2.tgz#71e91727ac7a203782d0a5ca4d1c462d14e234f6"
+  resolved "https://registry.npm.taobao.org/eslint-config-standard/download/eslint-config-standard-16.0.2.tgz#71e91727ac7a203782d0a5ca4d1c462d14e234f6"
   integrity sha1-cekXJ6x6IDeC0KXKTRxGLRTiNPY=
 
 eslint-import-resolver-node@^0.3.4:
