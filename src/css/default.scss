@@ -1,16 +1,20 @@
-
 $bgcolor: #000;
 $greycolor: #333;
 $grey2color: #888;
-$fgcolor: #DDD;
+$fgcolor: #ddd;
 $gameSize: 60em;
 
-$monospace: 'MS Gothic', monospace;
+$monospace: "MS Gothic", monospace;
 
-body, html {
+body,
+html {
     height: 100%;
 }
-*, body, html, input, textarea {
+*,
+body,
+html,
+input,
+textarea {
     background: $bgcolor;
     color: $fgcolor;
     padding: 0;
@@ -19,13 +23,13 @@ body, html {
     font-size: 16px;
     line-height: 24px;
     box-sizing: border-box;
-    font-family: 'メイリオ', 'Yu Gothic', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "メイリオ", "Yu Gothic", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode",
+        Geneva, Verdana, sans-serif;
     outline: none;
     cursor: default;
-    text-wrap:avoid;
-    word-wrap:break-word;
+    text-wrap: avoid;
+    word-wrap: break-word;
 }
-
 
 .line {
 }
@@ -59,11 +63,11 @@ hr {
     padding: 8px;
 }
 .texts {
-    margin-top:100vh;
+    margin-top: 100vh;
 }
 .lastelement {
     color: $grey2color;
-    font-size:12px;
+    font-size: 12px;
 }
 
 .textinput {
@@ -81,7 +85,7 @@ hr {
 }
 
 .button {
-    color: #CFC;
+    color: #cfc;
     cursor: pointer;
     text-decoration: underline;
 }
@@ -91,22 +95,22 @@ hr {
     text-decoration: underline;
 }
 .button:hover {
-    color: #FFA;
-    background: linear-gradient(-90deg, rgba(255,255,255,0), rgba(255,255,255,0.4));
+    color: #ffa;
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.4));
     //background-color: rgba(255,255,255,0.2);
 }
 .button:active {
-    color: #FCC;
+    color: #fcc;
 }
 
 .error {
-    border-left:2px solid #f88;
-    padding-left:4px;
-    color: #FF8;
+    border-left: 2px solid #f88;
+    padding-left: 4px;
+    color: #ff8;
     font-weight: normal;
-    font-size:12px;
-    line-height:16px;
-    background-color: rgba(255,255,255,0.2);
+    font-size: 12px;
+    line-height: 16px;
+    background-color: rgba(255, 255, 255, 0.2);
     font-family: $monospace;
 }
 

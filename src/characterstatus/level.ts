@@ -1,30 +1,29 @@
 import { savedata, saveclass, serializer } from '../savedata'
 import { CharacterDef } from '../charadef'
 import { CharactersContainer } from '../character'
-import { tuple } from '../util/tuple';
-import { AsyncEvent } from '../util/event';
-console.log("level")
+import { tuple } from '../util/tuple'
+import { AsyncEvent } from '../util/event'
+console.log('level')
 
 export const initializeModule = new AsyncEvent()
 
 initializeModule.addListener(async () => {
-    CharacterDef.prepareFunctions.push(c => {
-        c.レベル = new LevelTable()
-    })
-    CharactersContainer.prepareFunctions.push((c, d) => {
-        if (d) {
-            c.レベル = serializer.clone(d.レベル)
-        }
-        else {
-            c.レベル = new LevelTable()
-        }
-    })
+  CharacterDef.prepareFunctions.push(c => {
+    c.レベル = new LevelTable()
+  })
+  CharactersContainer.prepareFunctions.push((c, d) => {
+    if (d) {
+      c.レベル = serializer.clone(d.レベル)
+    } else {
+      c.レベル = new LevelTable()
+    }
+  })
 })
 
 /**
  * レベル(旧能力もしくはABL MARK)
  */
-@saveclass("leveltable")
+@saveclass('leveltable')
 export class LevelTable {
     @savedata Ｃ感覚 = 0
     @savedata Ｐ感覚 = 0
@@ -57,31 +56,29 @@ export class LevelTable {
 }
 
 export const KeyOfLevelTable = tuple(
-    "Ｃ感覚",
-    "Ｐ感覚",
-    "Ｖ感覚",
-    "Ａ感覚",
-    "Ｂ感覚",
-    "Ｍ感覚",
-    "親密",
-    "従順",
-    "欲望",
-    "技巧",
-    "奉仕精神",
-    "露出癖",
-    "マゾっ気",
-    "サドっ気",
-    "レズっ気",
-    "ホモっ気",
-    "自慰中毒",
-    "精液中毒",
-    "レズ中毒",
-    "ゲイ中毒",
-    "膣射中毒",
-    "肛射中毒",
-    "苦痛刻印",
-    "快楽刻印",
-    "反発刻印",
+  'Ｃ感覚',
+  'Ｐ感覚',
+  'Ｖ感覚',
+  'Ａ感覚',
+  'Ｂ感覚',
+  'Ｍ感覚',
+  '親密',
+  '従順',
+  '欲望',
+  '技巧',
+  '奉仕精神',
+  '露出癖',
+  'マゾっ気',
+  'サドっ気',
+  'レズっ気',
+  'ホモっ気',
+  '自慰中毒',
+  '精液中毒',
+  'レズ中毒',
+  'ゲイ中毒',
+  '膣射中毒',
+  '肛射中毒',
+  '苦痛刻印',
+  '快楽刻印',
+  '反発刻印'
 )
-
-

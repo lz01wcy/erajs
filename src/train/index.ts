@@ -1,13 +1,11 @@
 
-import "./trainloader"
-import "./trainmode"
-import { AsyncEvent } from "../util/event";
-import { makeModuleInitializer } from "../util/moduleInitializer";
+import './trainloader'
+import './trainmode'
+import { AsyncEvent } from '../util/event'
+import { makeModuleInitializer } from '../util/moduleInitializer'
 
 export const initializeModule = makeModuleInitializer(
-    import('./levelupmode'),
-    import('./train'),
-    import('./trainmode'),
+  import('./levelupmode'),
+  import('./train'),
+  import('./trainmode')
 )
-
-
